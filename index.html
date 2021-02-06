@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Konva Slide Out Panel</title>
+    <link rel="stylesheet" href="/css/game.css" />
+  </head>
+  <body>
+
+	<div id="posDiv" style="width:300px;">
+		<div id="posDivHeader">Click here to move</div>
+		<div id="posDivCoordList" style="height:600px"></div>
+	</div>
+	<div id="container" style="position: absolute"></div>
+
+	<div id="enlargedDiv">
+		<img id="enlargedImg" src="">
+	</div>
+
+	<div id="floatingNumDiv">100</div>
+
+	<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="/js/jquery.ui.touch-punch.min.js"></script>
+	<script src="https://unpkg.com/konva@4.2.2/konva.min.js"></script>
+	<script src="/js/utilJS.js"></script>
+	<script src="/js/utilUI.js"></script>
+	<script src="/js/client.js"></script>
+	<script src="/js/utilKonvas.js"></script>
+
+	<script>
+
+		$(document).ready(function() {
+			window.client.init();
+		});
+
+		document.addEventListener("keydown", function(e) {
+			if(e.keyCode === 80 && e.altKey)
+			{
+				$('#posDiv').show();
+				utilKonvas.SetImagesToDoubleClickPosExpose(null);
+			}
+		});
+
+		dragElement(document.getElementById("posDiv"));
+		
+	</script>
+
+
+  </body>
+</html>

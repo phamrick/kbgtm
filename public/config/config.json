@@ -1,0 +1,403 @@
+{
+	"piecesSetup" : {
+	
+		"imageLoad" : { "fileNames": ["board_height_1024.png", "player_board.png", "project_back.png", 
+										"tile_special_geyser.png", "tile_special_wildlife.png",	
+										"tile_special_factory.png", "tile_city.png",
+										"tile_noctis_city.png",	"tile_special_credit.png", 
+										"tile_special_volcano.png", "tile_special_mining.png", 
+										"tile_special_arrow.png", "tile_special_nuclear.png",
+										"tile_special_null.png",
+										"cube_white.png",
+										"cube_bronze.png",
+										"cube_gold.png",
+										"cube_green.png",
+										"cube_red.png",
+										"cube_silver_w48.png",
+										"tile_special_wildlife.png",
+										"tile_city.png",
+										"tile_greenery.png",
+										"tile_noctis_city.png",
+										"tile_ocean.png",
+										"supply_cube_gold.png",
+										"supply_cube_silver.png",
+										"supply_cube_bronze.png"]
+		},
+		"board" : {
+			"type": "pieceSingle",
+			"srcKey": "board_height_1024",
+			"scale": "1",
+			"position": { "x": "15", "y": "15"},
+			"draggable": "false",
+			"attractors": { "name": "tiles", "points":  [
+									{ "x": "419", "y": "200" },	{ "x": "500", "y": "200" },	{ "x": "581", "y": "201" },	{ "x": "662", "y": "201" },
+									{ "x": "742", "y": "201" },	{ "x": "379", "y": "270" },	{ "x": "460", "y": "270" },	{ "x": "540", "y": "270" },
+									{ "x": "621", "y": "270" },	{ "x": "702", "y": "270" },	{ "x": "782", "y": "270" },	{ "x": "339", "y": "340" },
+									{ "x": "420", "y": "339" },	{ "x": "500", "y": "339" },	{ "x": "580", "y": "339" },	{ "x": "661", "y": "340" },
+									{ "x": "741", "y": "339" },	{ "x": "822", "y": "340" },	{ "x": "299", "y": "410" },	{ "x": "379", "y": "409" },
+									{ "x": "460", "y": "409" },
+									{ "x": "541", "y": "409" },
+									{ "x": "621", "y": "409" },
+									{ "x": "702", "y": "409" },
+									{ "x": "781", "y": "410" },
+									{ "x": "863", "y": "409" },
+									{ "x": "339", "y": "480" },
+									{ "x": "420", "y": "479" },
+									{ "x": "500", "y": "479" },
+									{ "x": "581", "y": "480" },
+									{ "x": "662", "y": "479" },
+									{ "x": "743", "y": "480" },
+									{ "x": "823", "y": "479" },
+									{ "x": "903", "y": "479" },
+									{ "x": "460", "y": "549" },
+									{ "x": "540", "y": "549" },
+									{ "x": "621", "y": "549" },
+									{ "x": "702", "y": "549" },
+									{ "x": "782", "y": "549" },
+									{"x": "259", "y": "479"},
+									{"x": "299", "y": "549"},
+									{"x": "379", "y": "550"},
+									{"x": "863", "y": "550"},
+									{"x": "338", "y": "619"},
+									{"x": "419", "y": "619"},
+									{"x": "500", "y": "619"},
+									{"x": "581", "y": "620"},
+									{"x": "661", "y": "619"},
+									{"x": "741", "y": "620"},
+									{"x": "822", "y": "620"},
+									{"x": "379", "y": "689"},
+									{"x": "460", "y": "689"},
+									{"x": "541", "y": "689"},
+									{"x": "621", "y": "689"},
+									{"x": "701", "y": "688"},
+									{"x": "783", "y": "689"},
+									{"x": "419", "y": "759"},
+									{"x": "500", "y": "759"},
+									{"x": "581", "y": "759"},
+									{"x": "661", "y": "759"},
+									{"x": "742", "y": "759"}]
+			}
+		},
+		"cubesWhite" : {
+			"type": "pieceArray",
+			"srcKey": "cube_white",
+			"scale": "1",
+			"instances" : [ {"x": "18", "y": "947"},
+							{"x": "314", "y": "218"},
+							{"x": "1071", "y": "763"}],
+			"draggable": "true"
+		},
+		"supplyCubesGold" : {
+			"type": "pieceSingle",
+			"srcKey": "supply_cube_gold",
+			"scale": "1",
+			"position": {"x": "1300", "y": "350"},
+			"draggable": "true"
+		},
+		"supplyCubesSilver" : {
+			"type": "pieceSingle",
+			"srcKey": "supply_cube_silver",
+			"scale": "1",
+			"position": {"x": "1500", "y": "350"},
+			"draggable": "true"
+		},
+		"supplyCubesBronze" : {
+			"type": "pieceSingle",
+			"srcKey": "supply_cube_bronze",
+			"scale": "1",
+			"position": {"x": "1700", "y": "350"},
+			"draggable": "true"
+		},
+		"cubesGold" : {
+			"type": "supplyStack",
+			"srcKey": "cube_gold",
+			"count": "40",
+			"scale": "1",
+			"position": {"x": "1300", "y": "350"},
+			"draggable": "true"
+		},
+		"cubesBronze" : {
+			"type": "supplyStack",
+			"srcKey": "cube_bronze",
+			"count": "40",
+			"scale": "1",
+			"position": {"x": "1700", "y": "350"},
+			"draggable": "true"
+		},
+		"cubesBrcubesSilveronze" : {
+			"type": "supplyStack",
+			"srcKey": "cube_silver_w48",
+			"count": "40",
+			"scale": "1",
+			"position": {"x": "1500", "y": "350"},
+			"draggable": "true"
+		},
+		"cubesRedPlayerBoard" : {
+			"type": "pieceArray",
+			"srcKey": "cube_red",
+			"scale": "0.75",
+			"instances" : [ 
+				{"x": "1361", "y": "762"},
+				{"x": "1526", "y": "745"},
+				{"x": "1700", "y": "747"},
+				{"x": "1287", "y": "850"},
+				{"x": "1492", "y": "852"},
+				{"x": "1684", "y": "851"} ],
+			"draggable": "true"
+		},
+		"cubesRed" : {
+			"type": "supplyStack",
+			"srcKey": "cube_red",
+			"count": "30",
+			"scale": "1",
+			"position": {"x": "1300", "y": "450"},
+			"draggable": "true"
+		},
+		"projectDeck" : {
+			"type": "pieceSingle",
+			"srcKey": "project_back",
+			"scale": "0.55",
+			"position": {"x": "1705", "y": "15"},
+			"draggable": "false" 
+		},
+		"tileOcean" : {
+			"type": "supplyStack",
+			"srcKey": "tile_ocean",
+			"count": "9",
+			"scale": "1",
+			"position": {"x": "941", "y": "106"},
+			"draggable": "true",
+			"attracted": { "pieceName": "board", "pointsName": "tiles"}
+		},
+		"tileCity" : {
+			"type": "pieceSingle",
+			"srcKey": "tile_city",
+			"scale": "1",
+			"position": {"x": "1245", "y": "15"},
+			"draggable": "true",
+			"attracted": { "pieceName": "board", "pointsName": "tiles"}
+		},
+		"tileGreenery" : {
+			"type": "supplyStack",
+			"srcKey": "tile_greenery",
+			"count": "20",
+			"scale": "1",
+			"position": {"x": "1245", "y": "110"},
+			"draggable": "true",
+			"attracted": { "pieceName": "board", "pointsName": "tiles"}
+		},
+		"tileSpecialGeyser" : {
+			"type": "pieceSingle",
+			"srcKey": "tile_special_geyser",
+			"scale": "1",
+			"position": {"x": "1350", "y": "15"},
+			"draggable": "true",
+			"attracted": { "pieceName": "board", "pointsName": "tiles"}
+		},
+		"tileSpecialFactory" : {
+			"type": "pieceSingle",
+			"srcKey": "tile_special_factory",
+			"scale": "1",
+			"position": {"x": "1435", "y": "15"},
+			"draggable": "true",
+			"attracted": { "pieceName": "board", "pointsName": "tiles"}
+		}, 	
+		"tileSpecialCredit" : {
+			"type": "pieceSingle",
+			"srcKey": "tile_special_credit",
+			"scale": "1",
+			"position": {"x": "1520", "y": "15"},
+			"draggable": "true",
+			"attracted": { "pieceName": "board", "pointsName": "tiles"}
+		},
+		"tileSpecialVolcano" : {
+			"type": "pieceSingle",
+			"srcKey": "tile_special_volcano",
+			"scale": "1",
+			"position": {"x": "1605", "y": "15"},
+			"draggable": "true",
+			"attracted": { "pieceName": "board", "pointsName": "tiles"}
+		},	
+		"tileSpecialMining" : {
+			"type": "pieceSingle",
+			"srcKey": "tile_special_mining",
+			"scale": "1",
+			"position": {"x": "1350", "y": "110"},
+			"draggable": "true",
+			"attracted": { "pieceName": "board", "pointsName": "tiles"}
+		},	
+		"tileSpecialArrow" : {
+			"type": "pieceSingle",
+			"srcKey": "tile_special_arrow",
+			"scale": "1",
+			"position": {"x": "1435", "y": "110"},
+			"draggable": "true",
+			"attracted": { "pieceName": "board", "pointsName": "tiles"}
+		}, 
+		"tileSpecialNuclear" : {
+			"type": "pieceSingle",
+			"srcKey": "tile_special_nuclear",
+			"scale": "1",
+			"position": {"x": "1520", "y": "110"},
+			"draggable": "true",
+			"attracted": { "pieceName": "board", "pointsName": "tiles"}
+		},
+		"tileSpecialNull" : {
+			"type": "pieceSingle",
+			"srcKey": "tile_special_null",
+			"scale": "1",
+			"position": {"x": "1605", "y": "110"},
+			"draggable": "true" ,
+			"attracted": { "pieceName": "board", "pointsName": "tiles"}
+		},	
+		"tileSpecialWildlife" : {
+			"type": "pieceSingle",
+			"srcKey": "tile_special_wildlife",
+			"scale": "1",
+			"position": {"x": "1435", "y": "205"},
+			"draggable": "true",
+			"attracted": { "pieceName": "board", "pointsName": "tiles"}
+		},
+		"tileNoctisCity" : {
+			"type": "pieceSingle",
+			"srcKey": "tile_noctis_city",
+			"scale": "1",
+			"position": {"x": "1520", "y": "205"},
+			"draggable": "true",
+			"attracted": { "pieceName": "board", "pointsName": "tiles"}
+		}
+	},
+	"decksSetup" : {
+		"deckProject" : {
+			"scale" : "0.55", 
+			"cards" : [	
+				"proj_001_orange.png", "proj_002_green.png", "proj_003_green.png", "proj_004_blue.png", "proj_005_blue.png",
+				"proj_006_green.png", "proj_007_green.png", "proj_008_orange.png", "proj_009_blue.png",	"proj_010_green.png",
+				"proj_011_orange.png", "proj_012_green.png", "proj_013_green.png", "proj_014_blue.png",	"proj_015_green.png",
+				"proj_016_green.png", "proj_017_green.png", "proj_018_green.png", "proj_019_orange.png", "proj_020_blue.png",
+				"proj_021_green.png", "proj_022_green.png",	"proj_023_green.png", "proj_024_blue.png", "proj_025_green.png",
+				"proj_026_orange.png", "proj_027_orange.png", "proj_028_green.png",	"proj_029_green.png", "proj_030_blue.png",
+				"proj_031_blue.png", "proj_032_blue.png", "proj_033_blue.png", "proj_034_green.png", "proj_035_orange.png",
+				"proj_036_blue.png", "proj_037_green.png", "proj_038_green.png", "proj_039_green.png", "proj_040_green.png",
+				"proj_041_orange.png", "proj_042_green.png","proj_043_green.png","proj_044_blue.png","proj_045_green.png",
+				"proj_046_green.png","proj_047_blue.png","proj_048_orange.png","proj_049_green.png","proj_050_orange.png",
+				"proj_051_orange.png","proj_052_blue.png","proj_053_blue.png","proj_054_blue.png","proj_055_orange.png",
+				"proj_056_blue.png","proj_057_blue.png","proj_058_orange.png","proj_059_green.png","proj_060_green.png",
+				"proj_061_green.png","proj_062_green.png","proj_063_orange.png","proj_064_blue.png","proj_065_blue.png",
+				"proj_066_blue.png","proj_067_green.png","proj_068_green.png","proj_069_green.png",	"proj_070_blue.png",
+				"proj_071_orange.png","proj_072_green.png",	"proj_073_green.png","proj_074_green.png","proj_075_blue.png",
+				"proj_076_orange.png","proj_077_blue.png","proj_078_green.png",	"proj_079_green.png","proj_080_orange.png",
+				"proj_081_green.png","proj_082_blue.png","proj_083_green.png","proj_084_green.png",	"proj_085_blue.png",
+				"proj_086_orange.png","proj_087_blue.png","proj_088_blue.png","proj_089_orange.png","proj_090_blue.png",
+				"proj_091_orange.png","proj_092_blue.png","proj_093_green.png",	"proj_094_orange.png","proj_095_orange.png",
+				"proj_096_blue.png","proj_097_green.png","proj_098_green.png","proj_099_green.png",	"proj_100_green.png",
+				"proj_101_green.png","proj_102_green.png","proj_103_green.png",	"proj_104_green.png","proj_105_green.png",
+				"proj_106_green.png","proj_107_green.png","proj_108_blue.png","proj_109_blue.png","proj_110_green.png",
+				"proj_111_blue.png","proj_112_blue.png","proj_113_blue.png","proj_114_green.png","proj_115_orange.png",
+				"proj_116_blue.png","proj_117_green.png","proj_118_blue.png","proj_119_blue.png","proj_120_blue.png",
+				"proj_121_orange.png","proj_122_green.png","proj_123_orange.png","proj_124_green.png","proj_125_green.png",
+				"proj_126_green.png","proj_127_green.png","proj_128_orange.png","proj_129_green.png","proj_130_blue.png",
+				"proj_131_green.png","proj_132_blue.png","proj_133_blue.png","proj_134_blue.png","proj_135_green.png",
+				"proj_136_blue.png","proj_137_blue.png","proj_138_green.png","proj_139_green.png","proj_140_green.png",
+				"proj_141_blue.png","proj_142_green.png","proj_143_blue.png","proj_144_blue.png","proj_145_green.png",
+				"proj_146_green.png","proj_147_orange.png","proj_148_green.png","proj_149_green.png","proj_150_green.png",
+				"proj_151_orange.png","proj_152_green.png","proj_153_green.png","proj_154_green.png","proj_155_green.png",
+				"proj_156_green.png","proj_157_green.png","proj_158_green.png","proj_159_green.png","proj_160_blue.png",
+				"proj_161_green.png","proj_162_green.png","proj_163_green.png","proj_164_green.png","proj_165_blue.png",
+				"proj_166_green.png","proj_167_green.png","proj_168_green.png","proj_169_green.png","proj_170_orange.png",
+				"proj_171_green.png","proj_172_green.png","proj_173_green.png","proj_174_green.png","proj_175_green.png",
+				"proj_176_green.png","proj_177_blue.png","proj_178_green.png","proj_179_green.png","proj_180_green.png",
+				"proj_181_green.png","proj_182_orange.png","proj_183_green.png","proj_184_green.png","proj_185_green.png",
+				"proj_186_green.png","proj_187_green.png","proj_188_blue.png","proj_189_orange.png","proj_190_orange.png",
+				"proj_191_orange.png","proj_192_blue.png","proj_193_green.png","proj_194_blue.png","proj_195_blue.png",
+				"proj_196_orange.png","proj_197_green.png","proj_198_green.png","proj_199_green.png","proj_200_green.png",
+				"proj_201_blue.png","proj_202_green.png","proj_203_orange.png","proj_204_orange.png","proj_205_green.png",
+				"proj_206_blue.png","proj_207_blue.png","proj_208_orange.png"]
+		},
+		"deckCorp" : {
+			"scale" : "0.55",
+			"cards" : ["corp_001.png",
+						"corp_002.png",
+						"corp_003.png",
+						"corp_004.png",
+						"corp_005.png",
+						"corp_006.png",
+						"corp_007.png",
+						"corp_008.png",
+						"corp_009.png",
+						"corp_010.png",
+						"corp_011.png",
+						"corp_012.png"]
+		}
+	},
+	"playerCardMap": {
+		"regions" : {
+			"megaCredits" : {
+				"overalRegion" : {"x": "1260", "y": "605", "width" : "250", "height" : "130"},
+				"cubeSlots" :
+				[
+					{"x": "1260", "y": "593"},
+					{"x": "1260", "y": "623"}, 
+					{"x": "1260", "y": "653"}, 
+					{"x": "1260", "y": "683"},
+					{"x": "1305", "y": "593"},
+					{"x": "1305", "y": "623"}, 
+					{"x": "1305", "y": "653"}, 
+					{"x": "1305", "y": "683"},
+					{"x": "1350", "y": "593"},
+					{"x": "1350", "y": "623"}, 
+					{"x": "1350", "y": "653"}, 
+					{"x": "1350", "y": "683"},
+					{"x": "1395", "y": "593"},
+					{"x": "1395", "y": "623"}, 
+					{"x": "1395", "y": "653"}, 
+					{"x": "1395", "y": "683"},
+					{"x": "1440", "y": "593"},
+					{"x": "1440", "y": "623"}, 
+					{"x": "1440", "y": "653"}, 
+					{"x": "1440", "y": "683"},
+					{"x": "1260", "y": "563"},
+					{"x": "1305", "y": "563"},
+					{"x": "1350", "y": "563"},
+					{"x": "1395", "y": "563"},
+					{"x": "1440", "y": "563"},
+					{"x": "1260", "y": "533"},
+					{"x": "1305", "y": "533"},
+					{"x": "1350", "y": "533"},
+					{"x": "1395", "y": "533"},
+					{"x": "1440", "y": "533"}
+				]
+			},
+			"iron" : {
+				"overalRegion" : {"x": "1520", "y": "605", "width" : "165", "height" : "130"},
+				"cubeSlots" :
+				[
+					{"x": "1520", "y": "593"},
+					{"x": "1520", "y": "623"}, 
+					{"x": "1520", "y": "653"},
+					{"x": "1565", "y": "593"},
+					{"x": "1565", "y": "623"}, 
+					{"x": "1565", "y": "653"},
+					{"x": "1610", "y": "593"},
+					{"x": "1610", "y": "623"}, 
+					{"x": "1610", "y": "653"}
+				]
+			},
+			"titanium" : {
+				"overalRegion" : {"x": "1695", "y": "605", "width" : "165", "height" : "130"},
+				"cubeSlots" :
+				[
+					{"x": "1695", "y": "593"},
+					{"x": "1695", "y": "623"},
+					{"x": "1695", "y": "653"},
+					{"x": "1740", "y": "593"},
+					{"x": "1740", "y": "623"},
+					{"x": "1740", "y": "653"},
+					{"x": "1785", "y": "593"},
+					{"x": "1785", "y": "623"},
+					{"x": "1785", "y": "653"}
+				]
+			}
+		}
+	}
+}
